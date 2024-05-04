@@ -1,0 +1,78 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Para asegurar que ocupa la altura total de la ventana */
+    display: flex; /* Uso de flex para estructura responsiva */
+    flex-direction: column; /* Para mantener el footer en la parte inferior */
+}
+
+/* Estilo para el contenedor que mantiene el footer en la parte inferior */
+.content-wrapper {
+    flex: 1; /* Toma el espacio restante */
+    display: flex; /* Para centrado vertical */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrado */
+    padding: 20px; /* Espacio interno */
+}
+
+.profile {
+    display: flex; /* Usar flexbox */
+    justify-content: flex-start; /* Alinear horizontalmente a la izquierda */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px; /* Espacio interno */
+}
+
+/* Estilo para la imagen de perfil */
+.profile-image {
+   
+    margin-left: 50px; /* Espacio entre la imagen y el texto */
+
+}
+
+.profile-image img {
+    max-width: 400px; /* Ajuste del tamaño */
+    height: auto;
+    border-radius: 25px;
+}
+
+/* Estilo para la información del CV */
+.profile-info {
+    flex: 2; /* Ocupa dos tercios */
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-left: 50px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #4CAF50; /* Mismo color que el encabezado */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar el contenido */
+    padding: 20px; /* Espacio interno */
+}
+
+/* Estilo para el logotipo del pie de página */
+.footer-logo {
+    max-width: 150px; /* Logotipo pequeño */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Media query para diseño responsivo */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column; /* Diseño en columna para móviles */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .profile-info {
+        padding-left: 0; /* Quitar el espacio a la izquierda */
+    }
+}
